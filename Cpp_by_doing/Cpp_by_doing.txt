@@ -1,1 +1,1 @@
-./Debug/main.cpp.o   
+./Debug/name_the_great.cpp.o   
