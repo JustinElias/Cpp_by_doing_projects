@@ -98,6 +98,7 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="name_the_great.cpp"/>
     <File Name="nice_to_meet_you"/>
   </VirtualDirectory>
   <Dependencies Name="Debug"/>
