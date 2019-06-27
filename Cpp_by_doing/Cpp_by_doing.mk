@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/basic_chatbot.cpp$(ObjectSuffix) $(IntermediateDirectory)/name_the_great.cpp$(ObjectSuffix) $(IntermediateDirectory)/helloWorld.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/integer_calculator.cpp$(ObjectSuffix) 
 
 
 
@@ -93,29 +93,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/basic_chatbot.cpp$(ObjectSuffix): basic_chatbot.cpp $(IntermediateDirectory)/basic_chatbot.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/jelia/OneDrive/Desktop/git/cpp_by_doing/Cpp_by_doing_projects/Cpp_by_doing/basic_chatbot.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/basic_chatbot.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/basic_chatbot.cpp$(DependSuffix): basic_chatbot.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/basic_chatbot.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/basic_chatbot.cpp$(DependSuffix) -MM basic_chatbot.cpp
+$(IntermediateDirectory)/integer_calculator.cpp$(ObjectSuffix): integer_calculator.cpp $(IntermediateDirectory)/integer_calculator.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/jelia/OneDrive/Desktop/git/cpp_by_doing/Cpp_by_doing_projects/Cpp_by_doing/integer_calculator.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/integer_calculator.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/integer_calculator.cpp$(DependSuffix): integer_calculator.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/integer_calculator.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/integer_calculator.cpp$(DependSuffix) -MM integer_calculator.cpp
 
-$(IntermediateDirectory)/basic_chatbot.cpp$(PreprocessSuffix): basic_chatbot.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/basic_chatbot.cpp$(PreprocessSuffix) basic_chatbot.cpp
-
-$(IntermediateDirectory)/name_the_great.cpp$(ObjectSuffix): name_the_great.cpp $(IntermediateDirectory)/name_the_great.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/jelia/OneDrive/Desktop/git/cpp_by_doing/Cpp_by_doing_projects/Cpp_by_doing/name_the_great.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/name_the_great.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/name_the_great.cpp$(DependSuffix): name_the_great.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/name_the_great.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/name_the_great.cpp$(DependSuffix) -MM name_the_great.cpp
-
-$(IntermediateDirectory)/name_the_great.cpp$(PreprocessSuffix): name_the_great.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/name_the_great.cpp$(PreprocessSuffix) name_the_great.cpp
-
-$(IntermediateDirectory)/helloWorld.cpp$(ObjectSuffix): helloWorld.cpp $(IntermediateDirectory)/helloWorld.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/jelia/OneDrive/Desktop/git/cpp_by_doing/Cpp_by_doing_projects/Cpp_by_doing/helloWorld.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/helloWorld.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/helloWorld.cpp$(DependSuffix): helloWorld.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/helloWorld.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/helloWorld.cpp$(DependSuffix) -MM helloWorld.cpp
-
-$(IntermediateDirectory)/helloWorld.cpp$(PreprocessSuffix): helloWorld.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/helloWorld.cpp$(PreprocessSuffix) helloWorld.cpp
+$(IntermediateDirectory)/integer_calculator.cpp$(PreprocessSuffix): integer_calculator.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/integer_calculator.cpp$(PreprocessSuffix) integer_calculator.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
