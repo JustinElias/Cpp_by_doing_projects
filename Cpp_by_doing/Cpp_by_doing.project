@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Project Name="Cpp_by_doing" Version="10.0.0" InternalType="">
   <VirtualDirectory Name="Cpp_by_doing">
-    <File Name="basic_chatbot.cpp"/>
-    <File Name="name_the_great.cpp"/>
-    <File Name="helloWorld.cpp"/>
+    <File Name="integer_calculator.cpp"/>
   </VirtualDirectory>
   <Description/>
   <Dependencies/>
