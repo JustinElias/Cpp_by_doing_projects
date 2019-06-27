@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/integer_calculator.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/decimal_calculator.cpp$(ObjectSuffix) 
 
 
 
@@ -93,13 +93,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/integer_calculator.cpp$(ObjectSuffix): integer_calculator.cpp $(IntermediateDirectory)/integer_calculator.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/jelia/OneDrive/Desktop/git/cpp_by_doing/Cpp_by_doing_projects/Cpp_by_doing/integer_calculator.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/integer_calculator.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/integer_calculator.cpp$(DependSuffix): integer_calculator.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/integer_calculator.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/integer_calculator.cpp$(DependSuffix) -MM integer_calculator.cpp
+$(IntermediateDirectory)/decimal_calculator.cpp$(ObjectSuffix): decimal_calculator.cpp $(IntermediateDirectory)/decimal_calculator.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/jelia/OneDrive/Desktop/git/cpp_by_doing/Cpp_by_doing_projects/Cpp_by_doing/decimal_calculator.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/decimal_calculator.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/decimal_calculator.cpp$(DependSuffix): decimal_calculator.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/decimal_calculator.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/decimal_calculator.cpp$(DependSuffix) -MM decimal_calculator.cpp
 
-$(IntermediateDirectory)/integer_calculator.cpp$(PreprocessSuffix): integer_calculator.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/integer_calculator.cpp$(PreprocessSuffix) integer_calculator.cpp
+$(IntermediateDirectory)/decimal_calculator.cpp$(PreprocessSuffix): decimal_calculator.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/decimal_calculator.cpp$(PreprocessSuffix) decimal_calculator.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
