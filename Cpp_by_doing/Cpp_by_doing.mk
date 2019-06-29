@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=jelia
-Date                   :=26/06/2019
+Date                   :=29/06/2019
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/decimal_calculator.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Section8_correct_answer.cpp$(ObjectSuffix) 
 
 
 
@@ -93,13 +93,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/decimal_calculator.cpp$(ObjectSuffix): decimal_calculator.cpp $(IntermediateDirectory)/decimal_calculator.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/jelia/OneDrive/Desktop/git/cpp_by_doing/Cpp_by_doing_projects/Cpp_by_doing/decimal_calculator.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/decimal_calculator.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/decimal_calculator.cpp$(DependSuffix): decimal_calculator.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/decimal_calculator.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/decimal_calculator.cpp$(DependSuffix) -MM decimal_calculator.cpp
+$(IntermediateDirectory)/Section8_correct_answer.cpp$(ObjectSuffix): Section8_correct_answer.cpp $(IntermediateDirectory)/Section8_correct_answer.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/jelia/OneDrive/Desktop/git/cpp_by_doing/Cpp_by_doing_projects/Cpp_by_doing/Section8_correct_answer.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Section8_correct_answer.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Section8_correct_answer.cpp$(DependSuffix): Section8_correct_answer.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Section8_correct_answer.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Section8_correct_answer.cpp$(DependSuffix) -MM Section8_correct_answer.cpp
 
-$(IntermediateDirectory)/decimal_calculator.cpp$(PreprocessSuffix): decimal_calculator.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/decimal_calculator.cpp$(PreprocessSuffix) decimal_calculator.cpp
+$(IntermediateDirectory)/Section8_correct_answer.cpp$(PreprocessSuffix): Section8_correct_answer.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Section8_correct_answer.cpp$(PreprocessSuffix) Section8_correct_answer.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
