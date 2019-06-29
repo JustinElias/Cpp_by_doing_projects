@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/voting_age.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/cake.cpp$(ObjectSuffix) 
 
 
 
@@ -93,13 +93,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/voting_age.cpp$(ObjectSuffix): voting_age.cpp $(IntermediateDirectory)/voting_age.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/jelia/OneDrive/Desktop/git/cpp_by_doing/Cpp_by_doing_projects/Cpp_by_doing/voting_age.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/voting_age.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/voting_age.cpp$(DependSuffix): voting_age.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/voting_age.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/voting_age.cpp$(DependSuffix) -MM voting_age.cpp
+$(IntermediateDirectory)/cake.cpp$(ObjectSuffix): cake.cpp $(IntermediateDirectory)/cake.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/jelia/OneDrive/Desktop/git/cpp_by_doing/Cpp_by_doing_projects/Cpp_by_doing/cake.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/cake.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/cake.cpp$(DependSuffix): cake.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/cake.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/cake.cpp$(DependSuffix) -MM cake.cpp
 
-$(IntermediateDirectory)/voting_age.cpp$(PreprocessSuffix): voting_age.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/voting_age.cpp$(PreprocessSuffix) voting_age.cpp
+$(IntermediateDirectory)/cake.cpp$(PreprocessSuffix): cake.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/cake.cpp$(PreprocessSuffix) cake.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
