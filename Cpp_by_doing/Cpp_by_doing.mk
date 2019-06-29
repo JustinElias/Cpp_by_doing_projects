@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/Section8_correct_answer.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/voting_age.cpp$(ObjectSuffix) 
 
 
 
@@ -93,13 +93,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Section8_correct_answer.cpp$(ObjectSuffix): Section8_correct_answer.cpp $(IntermediateDirectory)/Section8_correct_answer.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/jelia/OneDrive/Desktop/git/cpp_by_doing/Cpp_by_doing_projects/Cpp_by_doing/Section8_correct_answer.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Section8_correct_answer.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Section8_correct_answer.cpp$(DependSuffix): Section8_correct_answer.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Section8_correct_answer.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Section8_correct_answer.cpp$(DependSuffix) -MM Section8_correct_answer.cpp
+$(IntermediateDirectory)/voting_age.cpp$(ObjectSuffix): voting_age.cpp $(IntermediateDirectory)/voting_age.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/jelia/OneDrive/Desktop/git/cpp_by_doing/Cpp_by_doing_projects/Cpp_by_doing/voting_age.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/voting_age.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/voting_age.cpp$(DependSuffix): voting_age.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/voting_age.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/voting_age.cpp$(DependSuffix) -MM voting_age.cpp
 
-$(IntermediateDirectory)/Section8_correct_answer.cpp$(PreprocessSuffix): Section8_correct_answer.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Section8_correct_answer.cpp$(PreprocessSuffix) Section8_correct_answer.cpp
+$(IntermediateDirectory)/voting_age.cpp$(PreprocessSuffix): voting_age.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/voting_age.cpp$(PreprocessSuffix) voting_age.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
