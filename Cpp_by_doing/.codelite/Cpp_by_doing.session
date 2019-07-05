@@ -4,9 +4,9 @@
   <wxString Value="C:\Users\jelia\OneDrive\Desktop\git\cpp_by_doing\Cpp_by_doing_projects\Cpp_by_doing\Cpp_by_doing.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\Users\jelia\OneDrive\Desktop\git\cpp_by_doing\Cpp_by_doing_projects\Cpp_by_doing\cake.cpp" Name="FileName"/>
+      <wxString Value="C:\Users\jelia\OneDrive\Desktop\git\cpp_by_doing\Cpp_by_doing_projects\Cpp_by_doing\favoriteFood.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="20" Name="CurrentLine"/>
+      <int Value="8" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

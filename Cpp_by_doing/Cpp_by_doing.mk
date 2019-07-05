@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/multiplechoice.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/favoriteFood.cpp$(ObjectSuffix) 
 
 
 
@@ -93,13 +93,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/multiplechoice.cpp$(ObjectSuffix): multiplechoice.cpp $(IntermediateDirectory)/multiplechoice.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/jelia/OneDrive/Desktop/git/cpp_by_doing/Cpp_by_doing_projects/Cpp_by_doing/multiplechoice.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/multiplechoice.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/multiplechoice.cpp$(DependSuffix): multiplechoice.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/multiplechoice.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/multiplechoice.cpp$(DependSuffix) -MM multiplechoice.cpp
+$(IntermediateDirectory)/favoriteFood.cpp$(ObjectSuffix): favoriteFood.cpp $(IntermediateDirectory)/favoriteFood.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/jelia/OneDrive/Desktop/git/cpp_by_doing/Cpp_by_doing_projects/Cpp_by_doing/favoriteFood.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/favoriteFood.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/favoriteFood.cpp$(DependSuffix): favoriteFood.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/favoriteFood.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/favoriteFood.cpp$(DependSuffix) -MM favoriteFood.cpp
 
-$(IntermediateDirectory)/multiplechoice.cpp$(PreprocessSuffix): multiplechoice.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/multiplechoice.cpp$(PreprocessSuffix) multiplechoice.cpp
+$(IntermediateDirectory)/favoriteFood.cpp$(PreprocessSuffix): favoriteFood.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/favoriteFood.cpp$(PreprocessSuffix) favoriteFood.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
