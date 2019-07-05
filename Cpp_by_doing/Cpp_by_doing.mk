@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=jelia
-Date                   :=29/06/2019
+Date                   :=04/07/2019
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/cake.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/multiplechoice.cpp$(ObjectSuffix) 
 
 
 
@@ -93,13 +93,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/cake.cpp$(ObjectSuffix): cake.cpp $(IntermediateDirectory)/cake.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/jelia/OneDrive/Desktop/git/cpp_by_doing/Cpp_by_doing_projects/Cpp_by_doing/cake.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/cake.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/cake.cpp$(DependSuffix): cake.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/cake.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/cake.cpp$(DependSuffix) -MM cake.cpp
+$(IntermediateDirectory)/multiplechoice.cpp$(ObjectSuffix): multiplechoice.cpp $(IntermediateDirectory)/multiplechoice.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/jelia/OneDrive/Desktop/git/cpp_by_doing/Cpp_by_doing_projects/Cpp_by_doing/multiplechoice.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/multiplechoice.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/multiplechoice.cpp$(DependSuffix): multiplechoice.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/multiplechoice.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/multiplechoice.cpp$(DependSuffix) -MM multiplechoice.cpp
 
-$(IntermediateDirectory)/cake.cpp$(PreprocessSuffix): cake.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/cake.cpp$(PreprocessSuffix) cake.cpp
+$(IntermediateDirectory)/multiplechoice.cpp$(PreprocessSuffix): multiplechoice.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/multiplechoice.cpp$(PreprocessSuffix) multiplechoice.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
